@@ -1,0 +1,22 @@
+<script>
+  /*
+    //PROBLEMA
+    Faça um script que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.
+    */
+
+  //ENTRADA
+
+  const ano = Number(prompt("Diga o Ano"));
+
+  //PROCESSAMENTO
+
+  if ((ano % 4 === 0 && ano % 100 != 0) || ano % 400 === 0) {
+    alert(`É Ano Bissexto!`);
+    document.write(`O ${ano} É Ano Bissexto.`);
+  } else {
+    alert(`Não É Ano Bissexto!`);
+    document.write(`O ${ano} Não É Ano Bissexto.`);
+  }
+
+  //SAÍDA
+</script>
